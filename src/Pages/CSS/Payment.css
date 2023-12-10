@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.payment {
+  background-color: #fce3fe;
+  width: 100%;
+  height: 90vh;
+  padding: 100px 0;
+}
+.payment-container {
+  margin: auto;
+  width: 550px;
+  height: 500px;
+  background-color: white;
+  padding: 40px;
+}
+.payment-info {
+  display: flex;
+  flex-direction: column;
+}
+.payment-info input {
+  height: 40px;
+  outline: none;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.payment-info h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 8px 0;
+}
+.expiry-merge {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 10px; */
+}
+.expiry-merge span {
+  font-size: 20px;
+  margin: 0 10px;
+}
+.expiry-merge input {
+  border: none;
+  padding-left: 8px;
+}
+.card-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.payment-container button {
+  width: 100%;
+  height: 72px;
+  color: white;
+  background-color: #ff4141;
+  margin-top: 30px;
+  border: none;
+  font-size: 22px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .payment-container {
+    width: 350px;
+  }
+  .card-details {
+    /* flex-direction: column; */
+    width: 100%;
+    gap: 20px;
+  }
+  .expiration{
+    width: 65%;
+  }
+  .cvv {
+    width: 80px;
+    padding-left: 8px;
+  }
+}
