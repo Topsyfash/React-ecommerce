@@ -18,11 +18,11 @@ export const Navbar = () => {
         setShowNav(!showNav)
     }
 
-    window.addEventListener('click', (event) => {
-        if (!event.target.classList.contains('close')) {
-            setShowNav(false)
-        }
-    });
+    // window.addEventListener('click', (event) => {
+    //     if (showNav ===false && !event.target.classList.contains('menu-links')) {
+    //         setShowNav(false)
+    //     }
+    // });
 
     return (
         <div className='navbar'>
@@ -33,8 +33,10 @@ export const Navbar = () => {
                 </Link>
             </div>
 
-            <nav className={`menu-container ${showNav ? 'active' : 'inactive'}`}>
+            <nav className={`menu-container ${showNav &&  'active'}`}>
+            <div className='menu-icon close-menu' onClick={toggleNav}>X</div>
                 <ul className='menu-links'>
+                    
                     <li onClick={() => { setNav('home') }}>
                         <Link to='/'>Home</Link>
                         {nav === 'home' ? <hr /> : ""}

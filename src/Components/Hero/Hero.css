@@ -76,13 +76,21 @@
 @media (max-width:600px){
     .hero-right > img{
         width: 400px;
+        /* height: 400px; */
 
     }
     .hero-left > h2 ,.hero-left p{
         font-size: 32px;
     }
+    .hero-left{
+        margin: auto;
+    }
     .hero-hand-icon > img {
         width: 68px;
+    }
+    .hero-latest-btn{
+        width: 200px;
+        font-size: 16px;
     }
 }
 

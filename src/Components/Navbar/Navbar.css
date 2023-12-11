@@ -90,8 +90,11 @@
     font-size: 40px;
     position: absolute;
     top: 0;
-    left: 20px;
+    right: 20px;
     cursor: pointer;
+    /* padding: 20px; */
+    /* margin: 20px 0; */
+    
   }
   .menu-icon  img {
     cursor: pointer;
@@ -104,11 +107,11 @@
     background:  #f5cff8;
     height: 100vh;
     width: 0;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0px;
     padding: 20px 5px;
-    transition: all 0.3s ease-in;
+    transition: 0.3s ease-in;
   }
   .menu-container.active {
     display: block;
