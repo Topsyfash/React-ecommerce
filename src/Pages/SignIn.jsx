@@ -34,7 +34,7 @@ const Login = () => {
         <button>Continue</button>
         <p className='loginSignup-login'>
           Already have an account?
-          <a href="/login">Login Here</a>
+          <a href="#/login">Login Here</a>
           {/* <Link to='/login'>
             <span>Login here</span >
           </Link> */}

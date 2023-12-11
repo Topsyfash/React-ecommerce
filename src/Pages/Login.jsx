@@ -34,7 +34,7 @@ const SignUp = () => {
                 </div>
                 <p className='loginSignup-login'>
                     Are you a new member? 
-                    <a href="/signup">Signup Here</a>
+                    <a href="#/signup">Signup Here</a>
                 </p>
             </div>
 

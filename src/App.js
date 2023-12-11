@@ -1,6 +1,6 @@
 import './App.css';
 import { Navbar } from './Components/Navbar/Navbar';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Shop from './Pages/Shop';
 import Home from './Pages/Home';
 import ShopCategory from './Pages/ShopCategory';
@@ -16,20 +16,20 @@ import Payment from './Pages/Payment';
 
 
 function App() {
- 
 
 
 
- 
+
+
 
 
   return (
-    <div>
-      <BrowserRouter>
+    <HashRouter>
+      <div>
         <Navbar />
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/shop' element={<Shop />} />
+          <Route exact path='/' element={<Home />} />
+          <Route path='/shop' element={<Shop/> } />
 
           <Route path='/mens'
             element={<ShopCategory
@@ -60,14 +60,14 @@ function App() {
             <Route path=':productId' element={<Product />} />
           </Route>
 
-          <Route path='/payment' element={<Payment/>} />
+          <Route path='/payment' element={<Payment />} />
           <Route path='/cart' element={<Cart />} />
           <Route path='/login' element={<Login />} />
-          <Route path='/signup' element={<SignIn/>} />
+          <Route path='/signup' element={<SignIn />} />
         </Routes>
         <Footer />
-      </BrowserRouter>
-    </div>
+      </div>
+    </HashRouter>
   );
 }
 
