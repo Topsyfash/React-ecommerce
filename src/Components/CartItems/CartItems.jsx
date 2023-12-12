@@ -96,7 +96,7 @@ const CartItems = () => {
                             <h3>${getTotalCartAmount()}</h3>
                         </div>
                     </div>
-                    <a href="/payment"><button>Proceed To Checkout</button></a>
+                    <a href="#/payment"><button>Proceed To Checkout</button></a>
                 </div>
                 <div className="cartitems-promocode">
                     <p>Enter promo code here , if available</p>

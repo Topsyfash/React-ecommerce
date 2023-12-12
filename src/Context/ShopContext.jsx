@@ -2,25 +2,29 @@ import React, { createContext, useEffect, useState } from 'react'
 import all_products from '../Components/Assets/all_product'
 
 export const ShopContext = createContext(null);
-const cartLocal = JSON.parse(localStorage.getItem("cartItems")||"[]")
-// const getDefaultCart = () => {
+const cartLocal = JSON.parse(localStorage.getItem("cartItems") || "[]")
 
-//     let cart = {cartLocal}
-//     for (let i = 0; i < all_products.length + 1; i++) {
-//         cart[i] = 0;
-//     }
-//     return cart;
+const getDefaultCart = () => {
 
-// }
+    // let cart = {}
+    for (let i = 0; i < all_products.length + 1; i++) {
+
+        cartLocal[i] = 0;
+    }
+    return cartLocal;
+
+}
 
 
 const ShopContextProvider = (props) => {
     
-    const [cartItems, setCartItems] = useState(cartLocal);
+    const [cartItems, setCartItems] = useState(getDefaultCart);
 
     useEffect(() => {
-        localStorage.setItem("cartItems",JSON.stringify(cartItems))
-    },[cartItems])
+        localStorage.setItem("cartItems",JSON.stringify(cartItems)) 
+    }, [cartItems])
+    
+    console.log(cartItems)
 
     // const [showNav, setShowNav] = useState(false);
     // const toggleNav = () => {

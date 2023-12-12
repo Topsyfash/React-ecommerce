@@ -3,7 +3,7 @@ import './Navbar.css'
 import logo from '../Assets/logo.png'
 import cart_icon from '../Assets/cart_icon.png'
 import nav_menu from '../Assets/hamburger.png'
-import user_login  from '../Assets/user-interface.png'
+import user_login from '../Assets/user-interface.png'
 import { Link, } from 'react-router-dom'
 import { ShopContext } from '../../Context/ShopContext'
 
@@ -18,25 +18,24 @@ export const Navbar = () => {
         setShowNav(!showNav)
     }
 
-    // window.addEventListener('click', (event) => {
-    //     if (showNav ===false && !event.target.classList.contains('menu-links')) {
-    //         setShowNav(false)
-    //     }
-    // });
+    window.addEventListener('click', (event) => {
+        if (!event.target.classList.contains('close')) {
+            setShowNav(false)
+        } 
+    });
 
     return (
         <div className='navbar'>
             <div className='nav-logo'>
                 <Link to="/">
-                <img src={logo} alt='navLogo' />
+                    <img src={logo} alt='navLogo' />
                     <p>E-shop</p>
                 </Link>
             </div>
 
-            <nav className={`menu-container ${showNav &&  'active'}`}>
-            <div className='menu-icon close-menu' onClick={toggleNav}>X</div>
+            <nav className={`menu-container ${showNav && 'active'}`}>
+                {/* <div className='menu-icon close-menu'><span onClick={toggleNav}>X</span></div> */}
                 <ul className='menu-links'>
-                    
                     <li onClick={() => { setNav('home') }}>
                         <Link to='/'>Home</Link>
                         {nav === 'home' ? <hr /> : ""}
@@ -61,7 +60,7 @@ export const Navbar = () => {
             </nav>
             <div className="login-cart">
                 <Link to='/signup'>
-                    <img src={user_login} alt="login"className='login-img'/>
+                    <img src={user_login} alt="login" className='login-img' />
                 </Link>
                 <Link to='/cart'>
                     <img src={cart_icon} alt="cart" />
