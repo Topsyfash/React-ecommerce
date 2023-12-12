@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-ecommerce/static/css/main.89204385.css",
-    "main.js": "/React-ecommerce/static/js/main.07847003.js",
+    "main.css": "/React-ecommerce/static/css/main.6ed17934.css",
+    "main.js": "/React-ecommerce/static/js/main.00c8c628.js",
     "static/media/banner_kids.png": "/React-ecommerce/static/media/banner_kids.fff815a581793a7380fb.png",
     "static/media/banner_women.png": "/React-ecommerce/static/media/banner_women.5a27fc4e4533e57e4676.png",
     "static/media/banner_mens.png": "/React-ecommerce/static/media/banner_mens.eed7197157196f319b17.png",
@@ -45,11 +45,11 @@
     "static/media/product_35.png": "/React-ecommerce/static/media/product_35.073b8b5de77cfc979821.png",
     "static/media/hand_icon.png": "/React-ecommerce/static/media/hand_icon.9c7487cecb600f30901b.png",
     "index.html": "/React-ecommerce/index.html",
-    "main.89204385.css.map": "/React-ecommerce/static/css/main.89204385.css.map",
-    "main.07847003.js.map": "/React-ecommerce/static/js/main.07847003.js.map"
+    "main.6ed17934.css.map": "/React-ecommerce/static/css/main.6ed17934.css.map",
+    "main.00c8c628.js.map": "/React-ecommerce/static/js/main.00c8c628.js.map"
   },
   "entrypoints": [
-    "static/css/main.89204385.css",
-    "static/js/main.07847003.js"
+    "static/css/main.6ed17934.css",
+    "static/js/main.00c8c628.js"
   ]
 }
