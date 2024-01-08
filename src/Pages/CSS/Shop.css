@@ -4,13 +4,14 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+    margin-bottom: 100px;
     /* height: 90vh; */
 }
-.shop-products > h1{
+.shop-products  h1{
     color: #171717;
     font-size: 40px;
     font-weight: 600;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .shop-products > hr {
     width: 200px;
@@ -35,5 +36,11 @@
     }
     .shop-products-item{
         justify-content: center;
+    }
+}
+
+@media (max-width:600px) {
+    .shop-products h1{
+        font-size: 36px;
     }
 }

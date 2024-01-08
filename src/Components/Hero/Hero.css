@@ -75,11 +75,14 @@
 }
 @media (max-width:600px){
     .hero-right > img{
-        width: 400px;
-        /* height: 400px; */
+        /* width: 400px; */
+        height: 400px;
 
     }
-    .hero-left > h2 ,.hero-left p{
+    .hero-left > h2{
+        font-size: 40px;
+    }
+    .hero-left p{
         font-size: 32px;
     }
     .hero-left{

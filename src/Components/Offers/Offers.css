@@ -14,17 +14,17 @@
     justify-content: center;
     align-items: center;
 }
-.offers-left > h1{
+.offers-left  h1{
     color: #171717;
     font-size: 80px;
     font-weight: 600;
 }
-.offers-left > p{
+.offers-left  p{
     color: #171717;
     font-size: 22px;
     font-weight: 600;
 }
-.offers-left > button{
+.offers-left  button{
     width: 280px;
     height: 70px;
     border-radius: 35px;
@@ -54,11 +54,17 @@
         padding: 20px 0;
     }
 }
-@media (max-width:992px){
+@media (max-width:600px){
+    .offers{
+        padding: 0 80px;
+    }
     .offers-right{
         justify-content: center;
     }
     .offers-left > h1{
         font-size: 36px;
+    }
+    .offers-right img{
+        height: 380px;
     }
 }

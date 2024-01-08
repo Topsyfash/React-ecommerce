@@ -29,7 +29,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route exact path='/' element={<Home />} />
-          <Route path='/shop' element={<Shop/> } />
+          <Route path='/shop' element={<Shop />} />
 
           <Route path='/mens'
             element={<ShopCategory

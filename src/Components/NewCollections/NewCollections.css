@@ -35,6 +35,9 @@
 
 @media(max-width:600px){
     .new-collections  h1{
-        font-size: 40px;
+        font-size: 32px;
+    }
+    .new-collections hr{
+        width: 160px;
     }
 }

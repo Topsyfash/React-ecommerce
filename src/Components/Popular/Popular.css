@@ -33,6 +33,12 @@
     .popular-item{
         flex-wrap: wrap;
     }
+    .popular  h1{
+        font-size: 38px;
+    }
+    .popular  hr {
+        width: 120px;
+    }
 }
 
 

@@ -132,11 +132,15 @@
   }
 }
 @media (max-width: 600px) {
+  .navbar{
+    padding: 8px;
+  }
   .nav-logo a p {
     font-size: 20px;
   }
   .nav-logo  img {
     width: 35px;
+    /* height: 28px; */
   }
   .login-cart {
     gap: 16px;
@@ -147,16 +151,19 @@
     font-weight: 600;
   }
   .login-cart img{
-    height: 28px;
+    height: 24px;
   }
   .nav-cart-count{
     width: 16px;
     height: 16px;
-    margin-left: -45px;
-    margin-top: -30px;
+    margin-left: -40px;
+    margin-top: -25px;
     font-size: 12px;
   }
   .menu-container.active{
     width: 70vw;
+  }
+  .menu-icon img{
+    height: 32px;
   }
 }
