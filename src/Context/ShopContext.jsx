@@ -15,26 +15,24 @@ const getDefaultCart = () => {
     return cart;
 }
 
+
 const ShopContextProvider = (props) => {
 
-    
+
     const [cartItems, setCartItems] = useState(getDefaultCart);
 
     useEffect(() => {
-        localStorage.setItem("cartItems",JSON.stringify(cartItems)) 
+        localStorage.setItem("cartItems", JSON.stringify(cartItems))
     }, [cartItems])
-    
 
-    // const [showNav, setShowNav] = useState(false);
-    // const toggleNav = () => {
-    //     setShowNav(!showNav)
-    // };
+
+
 
     function addToCart(itemId) {
-        
+
         setCartItems((prevItem) => {
             return {
-                ...prevItem, [itemId]: prevItem[itemId] + 1 
+                ...prevItem, [itemId]: prevItem[itemId] + 1
             }
         })
     }
@@ -93,7 +91,7 @@ const ShopContextProvider = (props) => {
 
 
 
-    const contextValue = { getTotalCartItems, getTotalCartAmount, all_products, cartItems, addToCart, removeFromCart,removeFromCartTotal };
+    const contextValue = { getTotalCartItems, getTotalCartAmount, all_products, cartItems, addToCart, removeFromCart, removeFromCartTotal };
 
 
     return (
